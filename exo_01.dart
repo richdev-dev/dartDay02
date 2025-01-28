@@ -26,7 +26,7 @@ protocoleBeta (letter);
     }
 
 
-    void protocoleBeta (String message){
+void protocoleBeta (String message){
  String letter = '''Cher agent X,
 
 
@@ -43,6 +43,10 @@ Notre agent de liaison vous contactera à 23h.
 
     Cordialement''';
   print(String.fromCharCodes(letter.runes.toList().reversed));
+  String message = letter.replaceAllMapped(RegExp(r'agent'), (match) {
+    return 'espion';
+  });
+  print(message);
 }
   
 
