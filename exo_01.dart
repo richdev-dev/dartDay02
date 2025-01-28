@@ -19,6 +19,7 @@ Notre agent de liaison vous contactera à 23h.
 protocoleBeta (letter);
 protocoleGamma ()
 protocoleDelta ();
+protocoleSecurite ();
 } 
 
  void protocoleAlpha (String message){
@@ -109,7 +110,40 @@ Notre agent de liaison vous contactera à 23h.
   print("Le caractère à l'index $index est: $caractere");
 }
 
+void protocoleSecurite (){
+  String letter = '''Cher agent X,
 
+
+
+J'ai aperçu le chat noir    au point de rendez-vous 7. L'agent Johnson était 
+
+également présent.    Le code secret 42 a été activé.
+
+
+
+Notre agent de liaison vous contactera à 23h.
+
+
+
+    Cordialement''';
+  print(letter.trim());
+
+  if (letter.isEmpty) {
+    print("La chaîne est vide après suppression des espaces.");
+  } else {
+    print("La chaîne n'est pas vide après suppression des espaces.");
+  }
+
+  RegExp regexp = RegExp(r'\d+');
+  Iterable<Match> matches = regexp.allMatches(letter);
+
+  for (Match match in matches) {
+    int nombre = int.parse(match.group(0)!);
+    print (nombre);
+  }
+  
+  
+}
   
 
  
