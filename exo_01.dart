@@ -18,6 +18,7 @@ Notre agent de liaison vous contactera à 23h.
   protocoleAlpha (letter);  
 protocoleBeta (letter);
 protocoleGamma ()
+protocoleDelta ();
 } 
 
  void protocoleAlpha (String message){
