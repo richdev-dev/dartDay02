@@ -15,11 +15,15 @@ Notre agent de liaison vous contactera à 23h.
 
     Cordialement''';
     print (letter);
-  protocoleAlpha (letter);  
-protocoleBeta (letter);
-protocoleGamma ()
-protocoleDelta ();
-protocoleSecurite ();
+  
+ analyserLettre(letter);
+} 
+void analyserLettre(String letter){
+  protocoleAlpha (letter); 
+  protocoleBeta (letter);
+  protocoleGamma ();
+  protocoleDelta();
+  protocoleSecurite ();
 } 
 
  void protocoleAlpha (String message){
