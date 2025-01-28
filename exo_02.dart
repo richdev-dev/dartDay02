@@ -8,6 +8,7 @@ calculerTrajet(distance);
 
 void calculerTrajet(int distance){
   protocoleEnergetique (distance);
+  protocoleGestionEnergie (distance);
   }
 
 
@@ -26,6 +27,18 @@ int charger = charge+1;
 
 
   }
+
+  void protocoleGestionEnergie (int distance) {
+num estimimationConsommation = pow (distance, 2);
+print ("$estimimationConsommation unités énergétiques");
+if (distance >=50) {
+    num reserve = estimimationConsommation + estimimationConsommation*0.2;
+    print(reserve);
+  } 
+
+}
+ 
+
 
  
 
