@@ -16,12 +16,13 @@ Notre agent de liaison vous contactera à 23h.
     Cordialement''';
     print (letter);
   protocoleAlpha (letter);  
-  print(letter.split(' '));
+
 } 
 
  void protocoleAlpha (String message){
     int nbrDeCaracteres = message.length;
     print("Le nombre de caratères est égale à $nbrDeCaracteres.");
+       print(message.split(' '));
     }
   
 
