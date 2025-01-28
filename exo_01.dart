@@ -104,7 +104,7 @@ Notre agent de liaison vous contactera à 23h.
     Cordialement''';
     print(letter.toUpperCase());
     print(letter.toLowerCase());
-  int index = 216; 
+  int index = 217; 
   String caractere = letter[index];
   print("Le caractère à l'index $index est: $caractere");
 }
