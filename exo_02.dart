@@ -9,6 +9,7 @@ calculerTrajet(distance);
 void calculerTrajet(int distance){
   protocoleEnergetique (distance);
   protocoleGestionEnergie (distance);
+  gererPointsDeControle (distance);
   }
 
 
@@ -38,8 +39,16 @@ if (distance >=50) {
 
 }
  
+}
 
-
- 
-
+ void gererPointsDeControle (int distance) {
+List<int> genererPointsDeRavitaillement = [];
+      int i;
+  for (i = 5; i <= distance; i += 5) {
+     genererPointsDeRavitaillement.add(i);
+}
+  print('Points de ravitaillement : $genererPointsDeRavitaillement');  
+  
+String format = distance.toString();
+print("0$format Km");
 }
